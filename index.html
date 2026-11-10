@@ -1,587 +1,405 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>necromania666 | Arte para bandas, zines e shows de metal</title>
-<meta name="description" content="Flyers de show, capas de zine, logos e identidade visual para bandas, selos e produtoras da cena underground.">
-<meta property="og:title" content="necromania666 | Arte para o subterrâneo">
-<meta property="og:description" content="Flyers de show, capas de zine, logos e identidade para bandas, selos e produtoras.">
-<meta property="og:image" content="artes/01.jpg">
-<meta name="theme-color" content="#120c0a">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23120c0a'/%3E%3Cpath d='M13.5 3h5v8h6v5h-6v13h-5V16h-6v-5h6z' fill='%23d6262b' transform='rotate(180 16 16)'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#11100e">
+<meta name="description" content="Necromania666 — direção de arte, flyers, capas, zines e identidade visual para a música extrema e a cultura independente.">
+<title>NECROMANIA666 — Arte fora da norma</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Pirata+One&family=Barlow+Semi+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 <style>
 :root{
-  --metal:"Metal Mania","Pirata One",Georgia,serif; --tinta:#120c0a; --sangue:#b3171c; --sangue-vivo:#d6262b; --papel:#cdb17a; --osso:#eadfc3; --fosco:#9a8f7c;
-  --gotica:"Pirata One","UnifrakturCook","Old English Text MT",Georgia,serif;
-  --texto:"Barlow Semi Condensed","Arial Narrow",Arial,sans-serif;
-  color-scheme:dark;
+ --ink:#11100e;--paper:#e9e1cf;--red:#b52625;--rust:#6e211e;--muted:#aaa18f;
+ --line:rgba(233,225,207,.2);--display:"Archivo Black",Impact,sans-serif;
+ --cond:"Barlow Condensed",Arial,sans-serif;--serif:"IM Fell English",Georgia,serif;
+ --max:1240px;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--tinta);color:var(--osso);font:500 1.125rem/1.55 var(--texto);-webkit-font-smoothing:antialiased}
-/* grão de xerox sobre tudo */
-body::after{content:"";position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.10;mix-blend-mode:overlay;
-  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--sangue-vivo);outline-offset:3px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:86px}
+body{margin:0;background:var(--ink);color:var(--paper);font:500 18px/1.5 var(--cond);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:20;pointer-events:none;opacity:.10;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");mix-blend-mode:screen}
+a{color:inherit;text-decoration:none}
+button,input,textarea,select{font:inherit}
 img{display:block;max-width:100%}
-.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
-h1,h2,h3{font-family:var(--gotica);font-weight:400;line-height:1;letter-spacing:.01em}
-h2{font-size:clamp(2.4rem,6vw,4rem);margin-bottom:.5rem}
-p{max-width:62ch}
-
-/* topo */
-header{position:sticky;top:0;z-index:40;background:rgba(18,12,10,.92);backdrop-filter:blur(6px);border-bottom:1px solid #2b1c18;padding-top:env(safe-area-inset-top,0px)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.7rem}
-.logo{display:block;line-height:0}.logo svg{display:block;width:176px;height:44px}
-.nav{display:flex;gap:1.4rem;align-items:center}
-.nav a{text-decoration:none;color:var(--osso)}
-.nav a:not(.btn):hover{color:var(--sangue-vivo)}
-.btn{display:inline-block;background:var(--sangue);color:var(--osso);padding:.8rem 1.4rem;text-decoration:none;font-weight:600;border:2px solid var(--sangue);transition:background .15s,color .15s}
-.btn:hover{background:var(--osso);color:var(--tinta);border-color:var(--osso)}
-.btn.vazado{background:transparent;border-color:var(--osso)}
-.btn.vazado:hover{background:var(--osso);color:var(--tinta)}
-@media(max-width:640px){.nav a:not(.btn){display:none}}
-
-/* hero */
-.hero{padding:clamp(3rem,8vw,6rem) 0 clamp(3rem,7vw,5rem);overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:2.5rem;align-items:center}
-.marca{display:block;margin-bottom:1.2rem}.marca svg{display:block;width:100%;height:auto;overflow:visible}
-.hero p{margin:1.4rem 0 2rem;font-size:1.3rem;color:var(--osso)}
-.hero .acoes{display:flex;gap:.9rem;flex-wrap:wrap}
-.colagem{position:relative;aspect-ratio:1/1.08}
-.colagem .cart{position:absolute;width:56%;box-shadow:0 14px 30px rgba(0,0,0,.7);opacity:0;animation:cai .7s cubic-bezier(.2,.8,.2,1) forwards}
-.colagem .cart:nth-child(1){left:0;top:6%;--r:-5deg;animation-delay:.1s}
-.colagem .cart:nth-child(2){right:0;top:0;--r:4deg;animation-delay:.3s}
-.colagem .cart:nth-child(3){left:22%;bottom:0;--r:-1.5deg;animation-delay:.5s}
-@keyframes cai{from{opacity:0;transform:translateY(-40px) rotate(calc(var(--r) * 3))}to{opacity:1;transform:translateY(0) rotate(var(--r))}}
-@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.colagem{max-width:420px;margin-inline:auto;width:100%}}
-
-/* arte (imagem ou substituto) */
-.arte{display:block;width:100%;background:#000}
-.arte img{width:100%;height:auto}
-.ph{aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:flex-end;gap:.4rem;padding:1rem;background:
-  repeating-linear-gradient(135deg,#1b1210 0 6px,#150e0c 6px 12px);border:1px solid #3a2520;color:var(--osso)}
-.ph b{font:400 1.6rem/1.05 var(--gotica);color:var(--sangue-vivo)}
-.ph span{font-size:.95rem;color:var(--fosco)}
-
-/* trabalhos: parede de flyers sobre papel */
-.papel{background:var(--papel);color:var(--tinta);position:relative}
-.papel::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.22;mix-blend-mode:multiply;
-  background:radial-gradient(ellipse at 20% 10%,transparent 40%,#6b4f1f 140%),radial-gradient(ellipse at 90% 90%,transparent 40%,#6b4f1f 140%)}
-.papel .wrap{position:relative}
-.trabalhos{padding:clamp(3.5rem,8vw,6rem) 0}
-.trabalhos h2{color:var(--tinta)}
-.trabalhos .intro{max-width:56ch;margin-bottom:1.8rem}
-.filtros{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2.4rem}
-.filtros button{font:600 1.05rem var(--texto);background:transparent;color:var(--tinta);border:2px solid var(--tinta);padding:.5rem 1.1rem;cursor:pointer}
-.filtros button[aria-pressed="true"]{background:var(--tinta);color:var(--papel)}
-.filtros button:hover{background:var(--sangue);border-color:var(--sangue);color:var(--osso)}
-.parede{columns:3;column-gap:1.8rem}
-.item{break-inside:avoid;margin:0 0 2.2rem;position:relative;transform:rotate(var(--r,0deg));filter:drop-shadow(0 8px 10px rgba(40,25,5,.45))}
-.abrir{display:block;width:100%;background:none;border:0;padding:0;cursor:zoom-in;color:inherit;font:inherit}
-.item:nth-child(3n+1){--r:-1.2deg}.item:nth-child(3n+2){--r:.9deg}.item:nth-child(3n){--r:-.5deg}
-.item::before{content:"";position:absolute;top:-12px;left:50%;width:84px;height:24px;margin-left:-42px;z-index:2;
-  background:rgba(234,223,195,.78);transform:rotate(-3deg);box-shadow:0 1px 2px rgba(0,0,0,.25)}
-.item figcaption{font-weight:600;margin-top:.55rem;color:var(--tinta)}
-.item[hidden]{display:none}
-@media(max-width:900px){.parede{columns:2}}
-@media(max-width:520px){.parede{columns:1;max-width:380px;margin-inline:auto}}
-
-/* serviços */
-.servicos{padding:clamp(3.5rem,8vw,6rem) 0}
-.servicos h2{color:var(--sangue-vivo)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:2rem}
-.card{border-top:4px solid var(--sangue);padding-top:1.1rem}
-.card h3{font-size:2.1rem;margin-bottom:.5rem}
-.card p{color:#d8ccb0}
-.card .prazo{margin-top:.9rem;color:var(--papel);font-weight:600}
-.mensal{margin-top:3rem;padding:1.6rem;border:2px dashed var(--sangue);display:flex;gap:1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.mensal h3{font-size:2.2rem;color:var(--osso)}
-.mensal p{margin-top:.4rem}
-@media(max-width:820px){.cards{grid-template-columns:1fr}}
-
-/* como funciona (sequência real) */
-.processo{padding:clamp(3.5rem,8vw,5.5rem) 0}
-.processo h2{color:var(--tinta)}
-.passos{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;margin-top:2rem}
-.passos li{counter-increment:p;border-left:4px solid var(--tinta);padding-left:1.1rem}
-.passos li::before{content:counter(p);font:400 3.2rem/1 var(--gotica);color:var(--sangue)}
-.passos strong{display:block;font-size:1.3rem}
-@media(max-width:820px){.passos{grid-template-columns:1fr}}
-
-/* contato */
-.contato{background:var(--sangue);padding:clamp(3.5rem,8vw,6rem) 0;text-align:left}
-.contato h2{color:var(--osso);font-size:clamp(2.8rem,8vw,5.5rem)}
-.contato p{margin:.8rem 0 1.8rem;font-size:1.25rem}
-.contato .btn{background:var(--tinta);border-color:var(--tinta)}
-.contato .btn:hover{background:var(--osso);border-color:var(--osso);color:var(--tinta)}
-.contato .btn.vazado{background:transparent;border-color:var(--osso)}
-footer{padding:1.6rem 0 calc(1.6rem + env(safe-area-inset-bottom,0px));color:var(--fosco);font-size:1rem}
-
-/* ampliação */
-dialog{margin:auto;background:#000;border:2px solid var(--sangue);color:var(--osso);max-width:min(92vw,720px);max-height:92vh;padding:0;overflow:auto}
-dialog::backdrop{background:rgba(0,0,0,.88)}
-dialog img{width:100%;height:auto}
-dialog .leg{padding:.8rem 1rem;display:flex;justify-content:space-between;gap:1rem;align-items:center}
-dialog button{font:600 1rem var(--texto);background:var(--sangue);color:var(--osso);border:0;padding:.5rem 1rem;cursor:pointer}
-
-
-::selection{background:var(--sangue);color:var(--osso)}
-html{scrollbar-color:var(--sangue) var(--tinta)}
-
-/* tarja rolante */
-.tarja-wrap{overflow:hidden;padding:1.3rem 0;background:var(--tinta)}
-.tarja{background:var(--sangue);color:var(--osso);border-block:3px solid #000;transform:rotate(-1.3deg);margin-inline:-3%;overflow:hidden}
-.faixa{display:flex;width:max-content;animation:rola 34s linear infinite}
-.faixa span{font:400 1.7rem/1 var(--gotica);padding:.6rem 0 .6rem 1.8rem;white-space:nowrap}
-.faixa span::after{content:"\2020";display:inline-block;transform:rotate(180deg);margin-left:1.8rem;color:var(--tinta)}
-@keyframes rola{to{transform:translateX(-50%)}}
-
-/* pedido */
-.pedido{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.2rem;max-width:760px;margin-bottom:1.6rem}
-.pedido label{display:block;font-weight:600}
-.pedido .larga,.pedido button{grid-column:1/-1}
-.pedido input,.pedido select,.pedido textarea{display:block;width:100%;margin-top:.35rem;background:var(--tinta);color:var(--osso);border:2px solid var(--tinta);padding:.7rem .8rem;font:500 1.05rem var(--texto)}
-.pedido ::placeholder{color:var(--fosco)}
-.pedido input:focus,.pedido select:focus,.pedido textarea:focus{outline:3px solid var(--osso);outline-offset:2px}
-.pedido button{justify-self:start;cursor:pointer;font:600 1.1rem var(--texto)}
-@media(max-width:640px){.pedido{grid-template-columns:1fr}}
-
-
-/* dossiê */
-.dossie{background:#000;border-block:6px solid var(--sangue);padding:clamp(3.5rem,8vw,6rem) 0}
-.dossie-topo{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:start}
-.necro{font:400 clamp(4rem,12vw,8.5rem)/.9 var(--metal);color:var(--osso);filter:url(#roido);text-shadow:4px 4px 0 var(--sangue);margin-bottom:.4rem}
-.data{font:400 clamp(2.2rem,6vw,3.8rem)/1 var(--gotica);color:var(--sangue-vivo);margin:.8rem 0 .4rem}
-.lema{font:600 1.5rem/1.2 var(--texto);color:var(--papel);margin-bottom:1.1rem}
-.lineup{border:2px solid var(--sangue);padding:1.4rem;background:#0b0605}
-.lineup h3{font-size:2.3rem;color:var(--sangue-vivo);margin-bottom:.5rem}
-.lineup ul{list-style:none}
-.lineup li{font-weight:600;font-size:1.3rem;padding:.5rem 0;border-bottom:1px solid #2b1c18}
-.lineup li::before{content:"\2020";display:inline-block;transform:rotate(180deg);color:var(--sangue-vivo);margin-right:.7rem}
-.prod{margin-top:1.1rem;color:var(--papel);font-weight:600}
-.editorial{margin:3rem 0 2.6rem;padding-left:1.4rem;border-left:5px solid var(--sangue);max-width:70ch;font:600 1.15rem/1.35 var(--texto);text-transform:uppercase;text-align:justify;hyphens:auto;letter-spacing:.02em}
-.editorial cite{display:block;margin-top:.9rem;font:400 1.6rem/1 var(--gotica);text-transform:none;text-align:left;font-style:normal;color:var(--sangue-vivo)}
-.rede-t{font-size:2.3rem;margin-bottom:.8rem}
-.rede{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem}
-.rede li{border:1px solid #5a2f28;padding:.35rem .8rem;color:var(--papel);font-weight:600}
-@media(max-width:820px){.dossie-topo{grid-template-columns:1fr}}
-
-
-/* clima: vinheta, gotas e abismo */
-body::before{content:"";position:fixed;inset:0;z-index:59;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55) 100%)}
-.gotas{position:relative}
-.gotas::before{content:"";position:absolute;top:0;left:0;right:0;height:64px;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='64' viewBox='0 0 420 64'%3E%3Cpath fill='%23b3171c' d='M0 0H420V8H398Q396 30 394 44Q392 30 390 8H318Q317 22 315 30Q313 22 312 8H236Q234 40 231 62Q228 40 226 8H140Q139 18 137 24Q135 18 134 8H62Q60 34 57 52Q54 34 52 8H0Z'/%3E%3C/svg%3E") repeat-x 0 0/420px 64px}
-.dossie.gotas,.abismo{padding-top:clamp(5rem,9vw,7rem)}
-.epigrafe{margin-top:2.2rem;padding-left:1rem;border-left:3px solid var(--sangue);font:400 1.6rem/1.15 var(--gotica);color:var(--fosco);max-width:30ch}
-.abismo{background:radial-gradient(ellipse at 50% 35%,#4a0b0e 0,#1b0507 68%);padding-bottom:clamp(3.5rem,8vw,6rem);border-bottom:6px solid var(--sangue)}
-.abismo .wrap{position:relative}
-.abismo h2{color:var(--osso);text-align:center}
-.abismo .sub{text-align:center;margin:.2rem auto 2.6rem;color:var(--papel);font-weight:600;font-size:1.3rem}
-.portal{position:relative;max-width:700px;margin-inline:auto;padding:2.8rem 3.6rem;background:#0a0203;border:3px solid var(--sangue);outline:1px solid var(--sangue);outline-offset:6px;text-align:center;color:var(--sangue-vivo);text-transform:uppercase;letter-spacing:.04em}
-.portal h3{font-size:clamp(2.2rem,6vw,3.2rem);margin:.8rem 0 1.2rem;text-transform:none;letter-spacing:.01em}
-.portal p{margin:0 auto 1.1rem;max-width:44ch;font-weight:600;font-size:1.05rem;line-height:1.4}
-.portal .fim{margin-top:1.8rem;font:400 1.8rem/1.15 var(--gotica);text-transform:none;letter-spacing:.01em}
-.lateral{position:absolute;top:50%;writing-mode:vertical-rl;font-size:.8rem;font-weight:600;letter-spacing:.14em;white-space:nowrap;color:var(--sangue-vivo)}
-.lateral.e{left:.9rem;transform:translateY(-50%) rotate(180deg)}
-.lateral.d{right:.9rem;transform:translateY(-50%)}
-.sigilo{position:absolute;width:40px;height:40px;color:var(--sangue-vivo)}
-.sigilo.a{top:.7rem;left:.7rem}.sigilo.b{top:.7rem;right:.7rem}.sigilo.c{bottom:.7rem;left:.7rem}.sigilo.d{bottom:.7rem;right:.7rem}
-.edicao{text-align:center;margin-top:3.2rem}
-.ed-t{font-weight:600;color:var(--papel);margin:0 auto .6rem}
-.edicao ul{list-style:none;display:flex;flex-wrap:wrap;gap:.3rem 1.2rem;justify-content:center}
-.edicao li{font:400 clamp(1.9rem,5vw,2.9rem)/1.1 var(--gotica);color:var(--osso)}
-.edicao li:not(:last-child)::after{content:"\2020";display:inline-block;transform:rotate(180deg);margin-left:1.2rem;color:var(--sangue-vivo);font-size:.7em}
-.ed-e{margin:1rem auto 0;color:var(--fosco)}
-@media(max-width:600px){.lateral{display:none}.portal{padding:3.2rem 1.4rem}}
-
-
-/* selo alquímico, grimório e review */
-.hero{position:relative}
-.hero .wrap{position:relative;z-index:1}
-.selo{position:absolute;top:50%;right:-14%;width:min(820px,130vw);height:auto;transform:translateY(-50%);opacity:.38;pointer-events:none;animation:giro 200s linear infinite}
-@keyframes giro{to{transform:translateY(-50%) rotate(360deg)}}
-.review{margin-top:4.5rem;padding-top:3rem;border-top:2px solid #2b1c18}
-.rev-t{font:400 clamp(2.6rem,7vw,4.4rem)/.95 var(--metal);color:var(--osso);filter:url(#roido);text-shadow:3px 3px 0 var(--sangue);margin-bottom:.4rem}
-.grimorio{padding:clamp(3.5rem,8vw,6rem) 0}
-.grimorio h2{color:var(--tinta)}
-.placas{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;margin-top:2.2rem}
-.placa{border:3px double var(--tinta);padding:1.5rem 1.2rem;text-align:center;background:rgba(234,223,195,.18)}
-.placa svg{display:block;width:84px;height:84px;margin:0 auto .7rem;fill:none;stroke:var(--tinta);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
-.placa h3{font-size:2.1rem;color:#8a0f14;margin-bottom:.4rem}
-.placa p{font-size:1.05rem;line-height:1.4;max-width:none}
-@media(max-width:980px){.nav{gap:1rem}.nav a:not(.btn){font-size:.95rem}}
-@media(max-width:900px){.placas{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.placas{grid-template-columns:1fr}}
-
-@media(prefers-reduced-motion:reduce){.selo{animation:none}.faixa{animation:none}html{scroll-behavior:auto}.colagem .cart{animation:none;opacity:1;transform:rotate(var(--r))}}
+::selection{background:var(--red);color:white}
+.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+.eyebrow{display:flex;align-items:center;gap:12px;text-transform:uppercase;letter-spacing:.18em;font-size:13px;font-weight:800;color:var(--muted)}
+.eyebrow:before{content:"";width:28px;height:2px;background:var(--red)}
+.kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:900}
+h1,h2,h3,p{margin-top:0}
+h2{font:clamp(42px,7vw,92px)/.92 var(--display);letter-spacing:-.055em;text-transform:uppercase}
+.section{padding:110px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}
+.section-head p{max-width:390px;color:var(--muted);font-size:20px;margin:0}
+header{position:sticky;top:0;z-index:30;background:rgba(17,16,14,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navbar{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:12px;min-width:180px}
+.brand img{width:145px;height:48px;object-fit:contain;object-position:left center}
+.brand-fallback{font:22px/.9 var(--display);letter-spacing:-.08em}
+.navlinks{display:flex;align-items:center;gap:25px}
+.navlinks a{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:#d6cebd;transition:.2s}
+.navlinks a:hover{color:#fff}
+.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--red);border:1px solid var(--red);padding:13px 19px;color:#fff;text-transform:uppercase;letter-spacing:.08em;font-weight:800;font-size:14px;transition:.2s}
+.nav-cta:hover,.button:hover{background:var(--paper);border-color:var(--paper);color:var(--ink)}
+.menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--paper);padding:9px 12px;text-transform:uppercase}
+.hero{min-height:690px;display:grid;align-items:center;position:relative;padding:85px 0 95px;border-bottom:1px solid var(--line);overflow:hidden}
+.hero:after{content:"666";position:absolute;right:-2vw;top:20px;font:clamp(220px,36vw,520px)/.8 var(--display);color:rgba(181,38,37,.08);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:55px;align-items:center;position:relative;z-index:1}
+.hero h1{font:clamp(68px,10vw,142px)/.78 var(--display);letter-spacing:-.09em;text-transform:uppercase;margin:25px 0 28px;max-width:760px}
+.hero h1 span{display:block;color:var(--red);padding-left:.42em}
+.hero-copy{font-size:clamp(20px,2.1vw,27px);line-height:1.22;max-width:590px;color:#d5cdbd}
+.hero-copy strong{color:white}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.button.ghost{background:transparent;border-color:var(--line);color:var(--paper)}
+.button.ghost:hover{background:var(--paper);color:var(--ink)}
+.hero-note{margin-top:42px;padding-left:15px;border-left:2px solid var(--red);font:italic 19px/1.3 var(--serif);color:var(--muted)}
+.hero-art{position:relative;min-height:500px}
+.hero-art .main-art{position:absolute;right:3%;top:0;width:70%;height:440px;object-fit:cover;filter:grayscale(1);border:1px solid #4d4539}
+.hero-art .over-art{position:absolute;left:0;bottom:0;width:43%;height:270px;object-fit:cover;filter:grayscale(1);border:8px solid var(--ink);box-shadow:15px 18px 0 var(--red)}
+.stamp{position:absolute;right:0;bottom:18px;border:1px solid var(--red);color:var(--paper);padding:12px 15px;transform:rotate(-7deg);font:13px/1.1 var(--display);letter-spacing:.1em;text-align:center;background:var(--ink)}
+.ticker{overflow:hidden;border-block:1px solid var(--line);background:var(--red);color:#fff;transform:rotate(-1deg) scale(1.02)}
+.ticker-track{display:flex;width:max-content;animation:marquee 35s linear infinite}
+.ticker span{padding:12px 22px;font:18px var(--display);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+.ticker span:after{content:"✳";margin-left:44px;color:var(--ink)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.manifesto{background:var(--paper);color:var(--ink);position:relative}
+.manifesto .eyebrow{color:var(--rust)}
+.manifesto .eyebrow:before{background:var(--rust)}
+.manifesto-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:9vw;align-items:start}
+.manifesto h2{font-size:clamp(45px,7vw,86px)}
+.manifesto-copy{font:clamp(22px,2.6vw,34px)/1.23 var(--serif);max-width:760px}
+.manifesto-copy p{margin:0 0 22px}
+.manifesto-copy strong{font-family:var(--display);font-size:.75em;text-transform:uppercase}
+.manifesto-foot{margin-top:42px;padding-top:20px;border-top:1px solid rgba(17,16,14,.3);display:flex;justify-content:space-between;gap:20px;font-size:13px;text-transform:uppercase;letter-spacing:.13em;font-weight:800}
+.archive{background:var(--paper);color:var(--ink);padding-top:0}
+.archive .section-head{padding-top:105px;border-top:1px solid rgba(17,16,14,.22)}
+.archive .section-head p{color:#514b41}
+.archive-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.art-card{position:relative;background:#171512;overflow:hidden;min-height:300px;cursor:pointer;isolation:isolate}
+.art-card:nth-child(1){grid-column:span 5;min-height:550px}
+.art-card:nth-child(2){grid-column:span 7;min-height:550px}
+.art-card:nth-child(3){grid-column:span 4;min-height:400px}
+.art-card:nth-child(4){grid-column:span 4;min-height:400px}
+.art-card:nth-child(5){grid-column:span 4;min-height:400px}
+.art-card:nth-child(6){grid-column:span 12;min-height:390px}
+.art-card img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;transition:transform .6s,filter .5s;filter:grayscale(1) contrast(1.1)}
+.art-card:hover img{transform:scale(1.045);filter:grayscale(.65) contrast(1.1)}
+.art-card:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.9));z-index:1}
+.art-caption{position:absolute;z-index:2;bottom:0;left:0;right:0;padding:22px;color:white;display:flex;align-items:end;justify-content:space-between;gap:15px}
+.art-caption small{display:block;color:#e0b9a7;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:900;margin-bottom:7px}
+.art-caption strong{font:clamp(21px,3vw,36px)/.95 var(--display);text-transform:uppercase;max-width:75%}
+.art-caption i{font-style:normal;font-size:28px;color:#fff}
+.archive-note{margin-top:22px;color:#5d5549;font-size:14px}
+.dossier{background:#171512;position:relative}
+.dossier:before{content:"DOSSIÊ / 01";position:absolute;right:3vw;top:40px;font:clamp(50px,10vw,140px)/.8 var(--display);color:rgba(255,255,255,.035)}
+.dossier-layout{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.dossier h2{font-size:clamp(50px,8vw,105px);color:var(--red)}
+.dossier h2 em{font:italic .65em var(--serif);color:var(--paper);text-transform:none;letter-spacing:0}
+.dossier-copy{max-width:560px;color:#c4bbaa;font-size:21px}
+.dossier-copy p{margin-bottom:18px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:30px}
+.fact{background:#171512;padding:17px}
+.fact small{display:block;text-transform:uppercase;color:var(--muted);letter-spacing:.16em;font-size:11px}
+.fact strong{font:22px var(--display);display:block;margin-top:5px}
+.dossier-art{position:relative}
+.dossier-art img{width:100%;max-height:620px;object-fit:cover;filter:grayscale(1)}
+.dossier-art:after{content:"FOLHA SUBTERRÂNEA";position:absolute;bottom:-18px;left:-18px;background:var(--red);padding:12px 17px;font:14px var(--display);letter-spacing:.08em}
+.projects{background:#c9bda5;color:var(--ink)}
+.projects .eyebrow{color:var(--rust)}
+.projects .eyebrow:before{background:var(--rust)}
+.projects-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}
+.projects h2{font-size:clamp(48px,7.5vw,100px)}
+.projects p{font-size:21px;max-width:590px}
+.project-list{margin-top:28px;border-top:1px solid rgba(17,16,14,.35)}
+.project-list div{display:flex;justify-content:space-between;gap:20px;padding:15px 0;border-bottom:1px solid rgba(17,16,14,.35);text-transform:uppercase;font-weight:800}
+.project-list span{color:#6d211e}
+.project-image{background:var(--ink);padding:30px;transform:rotate(2deg);box-shadow:18px 18px 0 var(--red)}
+.project-image img{width:100%;max-height:470px;object-fit:contain}
+.grimoire{background:var(--ink)}
+.grimoire-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}
+.grimoire-visual{background:var(--paper);padding:30px;position:relative}
+.grimoire-visual img{width:100%;max-height:480px;object-fit:contain;mix-blend-mode:multiply}
+.grimoire-copy h2{font-size:clamp(48px,7vw,90px)}
+.grimoire-copy p{color:var(--muted);font-size:21px}
+.grimoire-copy .quote{font:italic 27px/1.2 var(--serif);color:var(--paper);border-left:2px solid var(--red);padding-left:20px;margin-top:30px}
+.services{background:#e9e1cf;color:var(--ink)}
+.services .eyebrow{color:var(--rust)}
+.services .eyebrow:before{background:var(--rust)}
+.service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(17,16,14,.3);border:1px solid rgba(17,16,14,.3);margin-top:45px}
+.service{background:var(--paper);padding:30px;min-height:245px;display:flex;flex-direction:column;justify-content:space-between}
+.service .num{color:var(--red);font:14px var(--display)}
+.service h3{font:clamp(28px,3.5vw,43px)/.95 var(--display);text-transform:uppercase;margin:24px 0 12px}
+.service p{font-size:19px;color:#514b41;max-width:440px;margin:0}
+.service .deliver{margin-top:22px;font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:900;color:var(--rust)}
+.process{background:#1a1815}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:55px}
+.step{border-top:1px solid var(--red);padding-top:18px}
+.step b{font:clamp(48px,6vw,78px)/1 var(--display);color:var(--red)}
+.step h3{font:26px var(--display);text-transform:uppercase;margin:18px 0 10px}
+.step p{color:var(--muted);font-size:19px}
+.contact{background:var(--red);color:white;position:relative;overflow:hidden}
+.contact:after{content:"666";position:absolute;right:-20px;bottom:-110px;font:clamp(220px,36vw,500px)/.8 var(--display);color:rgba(0,0,0,.12)}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;position:relative;z-index:1}
+.contact h2{font-size:clamp(55px,8vw,105px)}
+.contact-intro{font:italic 25px/1.2 var(--serif);max-width:440px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+label{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.12em;font-weight:900}
+label.full{grid-column:1/-1}
+input,select,textarea{width:100%;margin-top:7px;padding:13px 12px;background:#171512;color:white;border:1px solid rgba(255,255,255,.4);border-radius:0;font:18px var(--cond)}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid white;outline-offset:2px}
+form button{grid-column:1/-1;justify-self:start;background:var(--paper);border:1px solid var(--paper);color:var(--ink);padding:15px 20px;text-transform:uppercase;font-weight:900;letter-spacing:.1em;cursor:pointer}
+form button:hover{background:var(--ink);border-color:var(--ink);color:white}
+.social{display:flex;gap:20px;flex-wrap:wrap;margin-top:25px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+footer{background:#0b0b0a;padding:30px 0;color:var(--muted);font-size:14px}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-row strong{color:var(--paper);font-family:var(--display)}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:60;display:none;align-items:center;justify-content:center;padding:30px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(90vw,1000px);max-height:82vh;object-fit:contain}
+.lightbox button{position:absolute;right:25px;top:20px;background:var(--red);color:white;border:0;padding:12px 18px;text-transform:uppercase;font-weight:900;cursor:pointer}
+@media(max-width:900px){
+ .navlinks{gap:14px}.navlinks a{font-size:13px}
+ .hero-grid,.dossier-layout,.projects-layout,.grimoire-layout,.contact-grid{grid-template-columns:1fr}
+ .hero{padding:65px 0}.hero-art{min-height:450px;max-width:650px;width:100%;margin:20px auto 0}
+ .manifesto-grid{grid-template-columns:1fr;gap:25px}
+ .dossier-art{max-width:650px}.projects-layout{gap:40px}.project-image{max-width:600px}
+ .grimoire-layout{gap:40px}.grimoire-visual{max-width:600px}
+ .contact-grid{gap:35px}
+}
+@media(max-width:680px){
+ .wrap{width:min(var(--max),calc(100% - 32px))}
+ .section{padding:75px 0}
+ .section-head{display:block;margin-bottom:30px}.section-head p{margin-top:18px}
+ .menu-toggle{display:block}
+ .navlinks{display:none;position:absolute;left:0;right:0;top:76px;background:#11100e;padding:20px 24px 26px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch}
+ .navlinks.open{display:flex}.navlinks a{font-size:17px;padding:7px 0}
+ .nav-cta{display:none}
+ .brand img{width:125px}
+ .hero{min-height:0;padding:65px 0}
+ .hero h1{font-size:clamp(62px,17vw,100px)}
+ .hero-art{min-height:360px}
+ .hero-art .main-art{height:330px;width:76%}
+ .hero-art .over-art{height:190px;width:44%;border-width:5px}
+ .stamp{font-size:10px}
+ .manifesto-foot{display:block;line-height:2}
+ .art-card:nth-child(n){grid-column:span 12;min-height:420px}
+ .art-card:nth-child(6){min-height:330px}
+ .dossier-layout{gap:45px}
+ .facts{grid-template-columns:1fr 1fr}
+ .project-image{padding:18px}
+ .service-grid{grid-template-columns:1fr}
+ .service{min-height:215px;padding:23px}
+ .process-grid{grid-template-columns:1fr;gap:30px}
+ form{grid-template-columns:1fr}
+ label.full,form button{grid-column:1}
+ .contact h2{font-size:clamp(54px,15vw,85px)}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <defs>
-    <filter id="roido" x="-5%" y="-20%" width="110%" height="145%">
-      <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3" seed="7" result="t"/>
-      <feDisplacementMap in="SourceGraphic" in2="t" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/>
-      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="1" seed="3" result="g"/>
-      <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -9 5.3" result="m"/>
-      <feComposite in="d" in2="m" operator="in"/>
-    </filter>
-    <symbol id="sig" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M20 34L11.8 8.7L33.3 24.3L6.7 24.3L28.2 8.7Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="miter"/></symbol>
-    <symbol id="wm" viewBox="0 0 800 200">
-      <g filter="url(#roido)">
-        <path fill="#b3171c" d="M92 134h9q-1 40-5 58q-5-18-4-58zM236 136h11q-1 28-6 44q-5-16-5-44zM452 136h9q-1 34-4 50q-5-16-5-50zM640 136h12q-1 24-6 40q-6-16-6-40zM330 134h8q0 22-4 32q-4-10-4-32z"/>
-        <path fill="#d6262b" d="M150 40l4-34 4 34zM250 34l3-30 3 30zM380 30l4-30 4 30zM520 34l3-28 3 28zM640 38l4-32 4 32z"/>
-        <text x="400" y="130" text-anchor="middle" textLength="780" lengthAdjust="spacingAndGlyphs" font-family="'Metal Mania','Pirata One',Georgia,serif" font-size="128" fill="#d6262b" stroke="#000" stroke-width="8" paint-order="stroke" stroke-linejoin="miter">necromania<tspan fill="#eadfc3">666</tspan></text>
-      </g>
-    </symbol>
-  </defs>
-</svg>
-
 <header>
-  <div class="wrap">
-    <a class="logo" href="#topo" aria-label="necromania666, início"><svg viewBox="0 0 800 200" aria-hidden="true"><use href="#wm"/></svg></a>
-    <nav class="nav" aria-label="Principal">
-      <a href="#trabalhos">Trabalhos</a>
-      <a href="#dossie">Dossiê</a>
-      <a href="#abismo">Deusatã</a>
-      <a href="#grimorio">Grimório</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#como">Como funciona</a>
-      <a class="btn" data-zap href="#contato">Pedir arte</a>
-    </nav>
-  </div>
+ <div class="wrap navbar">
+  <a class="brand" href="#inicio" aria-label="Necromania666 — início">
+   <img src="logo.jpeg" alt="Logo Necromania666" onerror="this.style.display='none';this.nextElementSibling.hidden=false">
+   <span class="brand-fallback" hidden>NECRO<br>MANIA666</span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navlinks">Menu ☰</button>
+  <nav class="navlinks" id="navlinks">
+   <a href="#manifesto">Manifesto</a><a href="#arquivo">Arquivo</a><a href="#dossie">Dossiê</a><a href="#deusata">Deusatã</a><a href="#servicos">Serviços</a>
+  </nav>
+  <a class="nav-cta" href="#contato">Iniciar um projeto ↗</a>
+ </div>
 </header>
+<main id="inicio">
+ <section class="hero">
+  <div class="wrap hero-grid">
+   <div>
+    <div class="eyebrow">Estúdio visual independente · 001 / subterrâneo</div>
+    <h1>Arte<br>fora da <span>norma.</span></h1>
+    <p class="hero-copy"><strong>Necromania666 é imagem, ruído e atitude.</strong> Direção visual para bandas, selos, zines e eventos que não nasceram para caber no molde.</p>
+    <div class="hero-actions"><a class="button" href="#arquivo">Explorar o arquivo ↘</a><a class="button ghost" href="#contato">Encomendar uma arte ↗</a></div>
+    <p class="hero-note">“O subterrâneo não pede licença. Ele imprime, cola, distribui e permanece.”</p>
+   </div>
+   <div class="hero-art" aria-label="Composição de ilustrações em preto e branco">
+    <img class="main-art" src="imagem2.jpeg" alt="Ilustração de horror gótico com figura demoníaca">
+    <img class="over-art" src="imagem4.jpeg" alt="Composição grotesca em estética de death metal">
+    <div class="stamp">SEM POLIMENTO<br>SEM CONCESSÃO<br>666% AUTORAL</div>
+   </div>
+  </div>
+ </section>
+ <div class="ticker" aria-hidden="true"><div class="ticker-track">
+  <span>Imagem com intenção</span><span>Metal extremo</span><span>Fanzine</span><span>Arte impressa</span><span>Cultura independente</span><span>Imagem com intenção</span><span>Metal extremo</span><span>Fanzine</span><span>Arte impressa</span><span>Cultura independente</span>
+ </div></div>
 
-<main id="topo">
-  <section class="hero">
-    <svg class="selo" viewBox="0 0 600 600" aria-hidden="true" fill="none" stroke="#b3171c">
-      <circle cx="300" cy="300" r="292" stroke-width="3"/>
-      <circle cx="300" cy="300" r="214" stroke-width="2"/>
-      <circle cx="300" cy="300" r="188" stroke-width="3"/>
-      <path id="anel" d="M300 300m-253 0a253 253 0 1 1 506 0a253 253 0 1 1 -506 0" stroke="none"/>
-      <text font-family="'Pirata One',Georgia,serif" font-size="25" fill="#b3171c" stroke="none"><textPath href="#anel" textLength="1570" lengthAdjust="spacing">VISITA INTERIORA TERRAE RECTIFICANDO INVENIES OCCULTUM LAPIDEM</textPath></text>
-      <path d="M300 485L191.3 150.3L475.9 357.2L124.1 357.2L408.7 150.3Z" stroke-width="3" stroke-linejoin="miter"/>
-    </svg>
-    <div class="wrap">
-      <div>
-        <h1 class="marca"><svg viewBox="0 0 800 200" role="img" aria-label="necromania666"><use href="#wm"/></svg></h1>
-        <p><strong>Arte para o subterrâneo.</strong> Flyers de show, capas de zine, logos e identidade para bandas, selos e produtoras de metal. Feito à mão, entregue no prazo.</p>
-        <div class="acoes">
-          <a class="btn" data-zap href="#contato">Pedir minha arte</a>
-          <a class="btn vazado" href="#trabalhos">Ver trabalhos</a>
-        </div>
-        <p class="epigrafe">Toda cruz projeta uma sombra mais antiga que ela.</p>
-      </div>
-      <div class="colagem" id="colagem" aria-hidden="true"></div>
+ <section class="section manifesto" id="manifesto">
+  <div class="wrap manifesto-grid">
+   <div><div class="eyebrow">01 / O que nos move</div><h2>Não é<br>enfeite.<br>É presença.</h2></div>
+   <div class="manifesto-copy">
+    <p>Uma capa anuncia antes do primeiro acorde. Um flyer convoca antes de o palco acender. Um zine registra aquilo que a indústria quase sempre ignora.</p>
+    <p><strong>A imagem também faz parte do som.</strong> Por isso, cada peça precisa ter atmosfera, leitura e personalidade — seja brutal, obscura, ritualística ou deliberadamente desconfortável.</p>
+    <p>O repertório visual atravessa gravura antiga, horror, fantasia sombria, xerox, tipografia extrema e a estética feita à mão. Não para imitar o passado, mas para criar imagens que pareçam ter história.</p>
+    <div class="manifesto-foot"><span>Imagem / Matéria / Ruído</span><span>Arquivo independente · Brasil</span></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="section archive" id="arquivo">
+  <div class="wrap">
+   <div class="section-head">
+    <div><div class="eyebrow">02 / Arquivo visual</div><h2>Seis portas.<br>Um universo.</h2></div>
+    <p>Um recorte de linguagens que orbitam o projeto: gravura, horror, fantasia, iconografia e identidade de banda. Abra cada imagem para observar os detalhes.</p>
+   </div>
+   <div class="archive-grid">
+    <article class="art-card" data-image="imagem1.jpeg" data-title="Confronto na escuridão"><img src="imagem1.jpeg" alt="Batalha medieval fantástica em ilustração preto e branco"><div class="art-caption"><div><small>01 / Fantasia sombria</small><strong>Confronto na escuridão</strong></div><i>↗</i></div></article>
+    <article class="art-card" data-image="imagem2.jpeg" data-title="O rito interrompido"><img src="imagem2.jpeg" alt="Cena de horror gótico e possessão demoníaca"><div class="art-caption"><div><small>02 / Horror gótico</small><strong>O rito interrompido</strong></div><i>↗</i></div></article>
+    <article class="art-card" data-image="imagem3.jpeg" data-title="O rio dos condenados"><img src="imagem3.jpeg" alt="Gravura clássica de figuras humanas em rio turbulento"><div class="art-caption"><div><small>03 / Gravura clássica</small><strong>O rio dos condenados</strong></div><i>↗</i></div></article>
+    <article class="art-card" data-image="imagem4.jpeg" data-title="Matéria em decomposição"><img src="imagem4.jpeg" alt="Ilustração grotesca de estética death metal"><div class="art-caption"><div><small>04 / Death metal</small><strong>Matéria em decomposição</strong></div><i>↗</i></div></article>
+    <article class="art-card" data-image="imagem5.jpeg" data-title="O livro das invocações"><img src="imagem5.jpeg" alt="Figura encapuzada sobre grimório aberto"><div class="art-caption"><div><small>05 / Ocultismo gráfico</small><strong>O livro das invocações</strong></div><i>↗</i></div></article>
+    <article class="art-card" data-image="imagem6.jpeg" data-title="Deusath Zine"><img src="imagem6.jpeg" alt="Emblema de serpente e asas com lettering Deusath Zine"><div class="art-caption"><div><small>06 / Identidade visual</small><strong>Deusath Zine</strong></div><i>↗</i></div></article>
+   </div>
+   <p class="archive-note">Nota editorial: este arquivo apresenta as imagens e referências visuais fornecidas para a composição do site. Créditos, autoria e descrição de cada peça podem ser acrescentados individualmente.</p>
+  </div>
+ </section>
+
+ <section class="section dossier" id="dossie">
+  <div class="wrap dossier-layout">
+   <div>
+    <div class="eyebrow">03 / Reportagem de cena</div>
+    <h2>O som<br>também<br>deixa<br>vestígios.</h2>
+    <div class="dossier-copy">
+     <p>O subterrâneo não vive apenas no palco. Vive nos cartazes colados, nas conversas depois do show, nas páginas de um fanzine e nos registros que impedem uma noite de desaparecer.</p>
+     <p>O dossiê Necrofest reúne a memória de um evento através de linguagem editorial: contexto, line-up, cobertura e leitura crítica da cena.</p>
     </div>
-  </section>
-
-  <div class="tarja-wrap" aria-hidden="true"><div class="tarja"><div class="faixa" id="faixa"></div></div></div>
-
-  <section class="papel trabalhos" id="trabalhos">
-    <div class="wrap">
-      <h2>Trabalhos</h2>
-      <p class="intro">Zines, cartazes de show e identidades que já rodaram pela cena. Clique em qualquer arte para ver em tamanho grande.</p>
-      <div class="filtros" id="filtros" role="group" aria-label="Filtrar trabalhos"></div>
-      <div class="parede" id="parede"></div>
+    <div class="facts">
+     <div class="fact"><small>Evento registrado</small><strong>Necrofest</strong></div>
+     <div class="fact"><small>Data informada no material</small><strong>08.08.2026</strong></div>
+     <div class="fact"><small>Produção citada</small><strong>Gore Produções</strong></div>
+     <div class="fact"><small>Formato</small><strong>Editorial + memória</strong></div>
     </div>
-  </section>
+   </div>
+   <div class="dossier-art"><img src="imagem3.jpeg" alt="Gravura dramática em preto e branco usada como imagem editorial"></div>
+  </div>
+ </section>
 
-  <section class="dossie gotas" id="dossie">
-    <div class="wrap">
-      <div class="dossie-topo">
-        <div>
-          <h2 class="necro">Necrofest</h2>
-          <p class="data">08.08.2026</p>
-          <p class="lema">Uma noite. Um cadáver. E muito metal.</p>
-          <p>A Folha Subterrânea esteve no evento, entre riffs, ruído e suor, e desenterrou tudo na cobertura: editorial, review e arte no mesmo clima da noite.</p>
-        </div>
-        <div class="lineup">
-          <h3>Bandas da noite</h3>
-          <ul>
-            <li>@necrofilosophy</li>
-            <li>@craniumcrushing</li>
-            <li>@exumador</li>
-            <li>@flagrvm</li>
-            <li>@infernnodeath</li>
-            <li>@peste.death</li>
-          </ul>
-          <p class="prod">Produção do evento: Gore Produções</p>
-        </div>
-      </div>
-      <div class="dossie-topo review">
-        <div>
-          <h3 class="rev-t">Uma noite entregue à morte</h3>
-          <p class="data">02.09.2026</p>
-          <p class="lema">Review: Left to Die. Leia a danação.</p>
-          <p>Resenha escrita “no ódio, na subversão e na febre de testemunhar” a noite. Produção da Heretic Prod e realização da Fortaleza Extreme.</p>
-        </div>
-        <div class="lineup">
-          <h3>Bandas resenhadas</h3>
-          <ul><li>Cranium Crushing</li><li>Flagelador</li><li>Cemitério</li><li>Left to Die</li></ul>
-        </div>
-      </div>
-      <blockquote class="editorial">
-        Para os legítimos, aqueles que carregam a bandeira do subterrâneo, da arte obscena e da ruptura do consenso moral da sociedade.
-        <cite>Editorial, Folha Subterrânea</cite>
-      </blockquote>
-      <h3 class="rede-t">Quem anda junto</h3>
-      <ul class="rede">
-        <li>@hereticprod</li><li>@calabouco_metalpunx</li><li>@anaites.recs.distro</li><li>@lucifer.rex.magazine</li>
-        <li>@bestialrites.darkart</li><li>@noisefetodistro</li><li>@misantropicprod</li>
-      </ul>
+ <section class="section projects" id="deusata">
+  <div class="wrap projects-layout">
+   <div>
+    <div class="eyebrow">04 / Publicação independente</div>
+    <h2>Deusatã<br><em>às portas do abismo</em></h2>
+    <p>Um território editorial para textos, imagens e vozes que habitam as margens. O zine não precisa obedecer à velocidade das redes: pode investigar, provocar, arquivar e deixar perguntas sem resposta.</p>
+    <div class="project-list">
+     <div><strong>Publicação</strong><span>Deusatã Nº I</span></div>
+     <div><strong>Conceito</strong><span>O abismo</span></div>
+     <div><strong>Linguagem</strong><span>Metal / Oculto / Editorial</span></div>
+     <div><strong>Colaboração citada</strong><span>@henrique_mottta</span></div>
     </div>
-  </section>
+   </div>
+   <div class="project-image"><img src="imagem6.jpeg" alt="Logo Deusath Zine com serpente, asas e lettering metálico"></div>
+  </div>
+ </section>
 
-  <section class="abismo gotas" id="abismo">
-    <div class="wrap">
-      <h2>Deusatã Nº I: O Abismo</h2>
-      <p class="sub">A primeira descida começou.</p>
-      <div class="portal">
-        <svg class="sigilo a" viewBox="0 0 40 40" aria-hidden="true"><use href="#sig"/></svg>
-        <svg class="sigilo b" viewBox="0 0 40 40" aria-hidden="true"><use href="#sig"/></svg>
-        <svg class="sigilo c" viewBox="0 0 40 40" aria-hidden="true"><use href="#sig"/></svg>
-        <svg class="sigilo d" viewBox="0 0 40 40" aria-hidden="true"><use href="#sig"/></svg>
-        <span class="lateral e" aria-hidden="true">Toda cruz projeta uma sombra mais antiga que ela</span>
-        <span class="lateral d" aria-hidden="true">O vazio não deseja ser lembrado</span>
-        <h3>Às portas do abismo</h3>
-        <p>Talvez porque o universo não seja uma obra concluída, mas uma ferida aberta sobre o vazio.</p>
-        <p>O abismo não está diante de vós, nem abaixo de vossos pés.</p>
-        <p class="fim">As portas não estão mais abertas.<br>Estão atrás de vós.</p>
-      </div>
-      <div class="edicao">
-        <p class="ed-t">Nesta edição</p>
-        <ul><li>Amen Corner</li><li>Miasthenia</li><li>Velho</li><li>Archogoat</li></ul>
-        <p class="ed-e">Editor e escritor: @henrique_mottta</p>
-      </div>
-    </div>
-  </section>
+ <section class="section grimoire">
+  <div class="wrap grimoire-layout">
+   <div class="grimoire-visual"><img src="imagem5.jpeg" alt="Necromante esquelético invocando sobre um grimório aberto"></div>
+   <div class="grimoire-copy">
+    <div class="eyebrow">05 / Caderno de referências</div>
+    <h2>O grimório<br>visual.</h2>
+    <p>Uma biblioteca de formas: selos, inscrições, anatomias impossíveis, figuras arquetípicas, gravuras e símbolos. O repertório não é uma fórmula pronta — é matéria-prima para construir uma linguagem visual própria a cada projeto.</p>
+    <p class="quote">“Toda imagem carrega uma origem. O trabalho é descobrir o que ela pode se tornar.”</p>
+   </div>
+  </div>
+ </section>
 
-  <section class="papel grimorio" id="grimorio">
-    <div class="wrap">
-      <h2>Grimório</h2>
-      <p>Os símbolos que carregamos nas artes, com o significado de cada um.</p>
-      <div class="placas">
-        <article class="placa">
-          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6V58M18 42H46"/></svg>
-          <h3>Cruz invertida</h3>
-          <p>Pela tradição, a cruz de São Pedro, crucificado de cabeça para baixo. No metal, é a inversão do símbolo cristão.</p>
-        </article>
-        <article class="placa">
-          <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="27"/><path d="M32 54L19.1 14.2L52.9 38.8L11.1 38.8L44.9 14.2Z"/></svg>
-          <h3>Pentagrama invertido</h3>
-          <p>Uma ponta para baixo, dois chifres para cima. É a marca do ocultismo e do satanismo na iconografia do metal.</p>
-        </article>
-        <article class="placa">
-          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 8L44 28H20ZM32 28V58M22 44H42"/></svg>
-          <h3>Enxofre</h3>
-          <p>Na alquimia, um dos três princípios, ligado à alma, ao fogo e à combustão. Triângulo sobre a cruz.</p>
-        </article>
-        <article class="placa">
-          <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="12"/><path d="M21 6Q32 20 43 6M32 44V60M24 52H40"/></svg>
-          <h3>Mercúrio</h3>
-          <p>O princípio do espírito, o que escorre e muda de forma. Crescente, círculo e cruz.</p>
-        </article>
-        <article class="placa">
-          <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="22"/><path d="M10 32H54"/></svg>
-          <h3>Sal</h3>
-          <p>O princípio do corpo, a matéria que fixa e preserva. Um círculo cortado ao meio.</p>
-        </article>
-        <article class="placa">
-          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 8H44L32 32L44 56H20L32 32Z"/></svg>
-          <h3>Ampulheta</h3>
-          <p>Memento mori, "lembra-te de que vais morrer". Símbolo clássico das pinturas de vanitas e da melancolia.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+ <section class="section services" id="servicos">
+  <div class="wrap">
+   <div class="section-head">
+    <div><div class="eyebrow">06 / O que pode ganhar forma</div><h2>Serviços<br>de criação.</h2></div>
+    <p>Da peça única ao conjunto visual de uma publicação. O escopo é definido antes do início para alinhar expectativa, formato e prazo.</p>
+   </div>
+   <div class="service-grid">
+    <article class="service"><div><span class="num">01 — CARTAZ & DIGITAL</span><h3>Flyer e pôster</h3><p>Peça principal para anunciar shows, festivais e lançamentos, com versões adaptadas para feed, stories e impressão.</p></div><div class="deliver">Entrega: arquivos digitais prontos para uso</div></article>
+    <article class="service"><div><span class="num">02 — PUBLICAÇÃO</span><h3>Zine & editorial</h3><p>Direção visual, capa, organização de páginas e tratamento gráfico para fanzines, dossiês e publicações independentes.</p></div><div class="deliver">Entrega: arquivo para leitura ou impressão</div></article>
+    <article class="service"><div><span class="num">03 — IDENTIDADE</span><h3>Logo & linguagem</h3><p>Construção ou refinamento de identidade para bandas, selos e projetos culturais, considerando aplicação e legibilidade.</p></div><div class="deliver">Entrega: versões e aplicações combinadas</div></article>
+    <article class="service"><div><span class="num">04 — LANÇAMENTO</span><h3>Pacote de divulgação</h3><p>Conjunto coordenado de peças para single, EP, álbum ou evento: capa, anúncio, contagem regressiva e materiais sociais.</p></div><div class="deliver">Entrega: escopo personalizado</div></article>
+   </div>
+  </div>
+ </section>
 
-  <section class="servicos" id="servicos">
-    <div class="wrap">
-      <h2>Serviços</h2>
-      <p>Pacotes com escopo claro, para você saber o que recebe antes de pagar.</p>
-      <div class="cards">
-        <article class="card">
-          <h3>Flyer de show</h3>
-          <p>Cartaz para o feed e versão para stories, com line-up, local, data e logos das bandas. Duas rodadas de ajuste.</p>
-          <p class="prazo">Entrega em 2 a 4 dias</p>
-        </article>
-        <article class="card">
-          <h3>Zine e capas</h3>
-          <p>Capa e diagramação de zine ou fanzine, com tratamento de textura e tipografia no clima da edição.</p>
-          <p class="prazo">Prazo combinado por edição</p>
-        </article>
-        <article class="card">
-          <h3>Banda e selo</h3>
-          <p>Logo legível, paleta, kit para redes e arte de capa de single ou EP. A identidade que acompanha a banda no palco.</p>
-          <p class="prazo">Entrega em 5 a 10 dias</p>
-        </article>
-      </div>
-      <div class="mensal">
-        <div>
-          <h3>Produtora ou selo? Pacote mensal</h3>
-          <p>Uma quantidade fixa de flyers por mês, com prioridade na fila e preço melhor por arte.</p>
-        </div>
-        <a class="btn" data-zap data-msg="Fala! Sou de uma produtora/selo e quero saber do pacote mensal." href="#contato">Quero o pacote mensal</a>
-      </div>
-    </div>
-  </section>
+ <section class="section process">
+  <div class="wrap">
+   <div class="eyebrow">07 / Do primeiro contato à arte final</div>
+   <h2>Processo sem<br>mistério.</h2>
+   <div class="process-grid">
+    <article class="step"><b>01</b><h3>Briefing</h3><p>Você apresenta a banda, o evento ou a publicação, explica o objetivo, informa formatos, prazo e referências. Quanto mais contexto, melhor a direção.</p></article>
+    <article class="step"><b>02</b><h3>Direção & ajustes</h3><p>Definimos conceito, hierarquia das informações e caminho visual. A proposta é revisada dentro do escopo combinado antes da finalização.</p></article>
+    <article class="step"><b>03</b><h3>Entrega</h3><p>Com a aprovação, os arquivos são preparados nos formatos acordados. Prazos, quantidade de ajustes e condições ficam definidos por escrito.</p></article>
+   </div>
+  </div>
+ </section>
 
-  <section class="papel processo" id="como">
-    <div class="wrap">
-      <h2>Como funciona</h2>
-      <p>O trabalho segue o Opus alquímico: da matéria bruta à obra final.</p>
-      <ol class="passos">
-        <li><strong>Nigredo: você conta o que precisa</strong>Manda no WhatsApp a banda ou evento, a data, as referências e o clima que quer.</li>
-        <li><strong>Albedo: eu mando o rascunho</strong>Você vê a direção da arte antes de qualquer pagamento final e pede os ajustes.</li>
-        <li><strong>Rubedo: arte final entregue</strong>Arquivos em alta para impressão e versões prontas para Instagram.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="contato" id="contato">
-    <div class="wrap">
-      <h2>A descida começa aqui</h2>
-      <p>Preencha o pedido e ele chega pronto no meu WhatsApp. Eu respondo com prazo e valor.</p>
-      <form class="pedido" id="pedido">
-        <label>O que você precisa
-          <select name="tipo">
-            <option>Flyer de show</option>
-            <option>Capa de zine</option>
-            <option>Logo ou identidade de banda</option>
-            <option>Pacote mensal (produtora ou selo)</option>
-            <option>Outra coisa</option>
-          </select>
-        </label>
-        <label>Banda, zine ou evento
-          <input name="nome" required placeholder="Ex.: show de lançamento do EP">
-        </label>
-        <label>Data ou prazo
-          <input name="prazo" placeholder="Ex.: show dia 15/12">
-        </label>
-        <label>Instagram (opcional)
-          <input name="insta" placeholder="@suabanda">
-        </label>
-        <label class="larga">Clima e referências
-          <textarea name="ref" rows="3" placeholder="Ex.: death metal old school, vermelho e preto, textura de xerox"></textarea>
-        </label>
-        <button class="btn" type="submit">Enviar pedido no WhatsApp</button>
-      </form>
-      <a class="btn vazado" id="insta" href="#contato" target="_blank" rel="noopener">Ver o Instagram</a>
-    </div>
-  </section>
+ <section class="section contact" id="contato">
+  <div class="wrap contact-grid">
+   <div>
+    <div class="eyebrow">08 / Abra um trabalho</div>
+    <h2>Vamos<br>tirar do<br>subsolo?</h2>
+    <p class="contact-intro">Conte o que você está preparando. A primeira conversa serve para entender a ideia e encontrar a forma certa de colocá-la no mundo.</p>
+    <div class="social"><a href="https://instagram.com/necromania666" target="_blank" rel="noopener">Instagram ↗</a><a href="#arquivo">Ver arquivo ↗</a></div>
+   </div>
+   <form id="briefing">
+    <label>O que você precisa
+     <select name="tipo"><option>Flyer ou pôster</option><option>Capa ou zine</option><option>Logo ou identidade</option><option>Pacote de lançamento</option><option>Outro projeto</option></select>
+    </label>
+    <label>Nome da banda / projeto
+     <input name="projeto" required placeholder="Nome do projeto">
+    </label>
+    <label>Prazo ou data
+     <input name="prazo" placeholder="Ex.: evento em 20/12">
+    </label>
+    <label>Formato
+     <input name="formato" placeholder="Feed, stories, impressão...">
+    </label>
+    <label class="full">Ideia, referências e informações importantes
+     <textarea name="detalhes" placeholder="Conte o clima, as referências, o que precisa aparecer e qualquer detalhe importante."></textarea>
+    </label>
+    <button type="submit">Enviar briefing pelo WhatsApp ↗</button>
+   </form>
+  </div>
+ </section>
 </main>
-
-<footer><div class="wrap">necromania666. As portas não estão mais abertas. Estão atrás de vós.</div></footer>
-
-<dialog id="lb" aria-label="Arte ampliada">
-  <div id="lbImg"></div>
-  <div class="leg"><span id="lbCap"></span><button type="button" id="lbFechar">Fechar</button></div>
-</dialog>
-
+<footer><div class="wrap footer-row"><strong>NECROMANIA666</strong><span>Imagem independente. Cultura subterrânea. Sem concessões.</span><span>© <span id="year"></span> · Todos os direitos reservados.</span></div></footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada"><button id="closeLightbox">Fechar ✕</button><img src="" alt="" id="lightboxImage"></div>
 <script>
-/* ===== EDITE AQUI ===== */
-const CFG = {
-  whatsapp: "55XXXXXXXXXXX",          // DDI + DDD + número, só dígitos
-  instagram: "necromania666",
-  mensagem: "Fala! Vi o portfólio e quero uma arte para: "
-};
-// src = caminho da imagem na pasta artes/. k = categoria: zine, flyer ou banda
-const ARTES = [
-  {src:"artes/01.jpg", t:"Folha Subterrânea, Bulldozer", k:"zine"},
-  {src:"artes/02.jpg", t:"Deus Sata Zine", k:"zine"},
-  {src:"artes/03.jpg", t:"Folha Subterrânea, Lucifer", k:"zine"},
-  {src:"artes/04.jpg", t:"Folha Subterrânea, edição extrema", k:"zine"},
-  {src:"artes/05.jpg", t:"Misantropia, Ato III", k:"flyer"},
-  {src:"artes/06.jpg", t:"Flyer de show", k:"flyer"},
-  {src:"artes/07.jpg", t:"Logo de banda", k:"banda"},
-  {src:"artes/08.jpg", t:"Identidade de banda", k:"banda"},
-  {src:"artes/09.jpg", t:"Folha Subterrânea, Editorial do Necrofest", k:"zine"},
-  {src:"artes/10.jpg", t:"Deusatã Nº I, Às portas do abismo", k:"zine"},
-  {src:"artes/11.jpg", t:"Folha Subterrânea, Review Left to Die", k:"zine"}
-];
-const CATEGORIAS = {todos:"Todos", zine:"Zines e capas", flyer:"Flyers de show", banda:"Logos e bandas"};
-/* ===================== */
-
-const $ = s => document.querySelector(s);
-const zapUrl = msg => "https://wa.me/" + CFG.whatsapp + "?text=" + encodeURIComponent(msg || CFG.mensagem);
-
-// imagem com substituto caso o arquivo ainda não exista
-function arte(a){
-  const box = document.createElement("span");
-  box.className = "arte";
-  const img = new Image();
-  img.src = a.src; img.alt = a.t; img.loading = "lazy";
-  img.onerror = () => {
-    box.innerHTML = '<span class="ph"><b></b><span>Coloque a arte em ' + a.src + '</span></span>';
-    box.querySelector("b").textContent = a.t;
-    box.dataset.vazio = "1";
-  };
-  box.appendChild(img);
-  return box;
-}
-
-// colagem do topo (3 primeiras artes)
-const colagem = $("#colagem");
-ARTES.slice(0,3).forEach(a => { const c = document.createElement("div"); c.className = "cart"; c.appendChild(arte(a)); colagem.appendChild(c); });
-
-// parede de trabalhos
-const parede = $("#parede"), filtros = $("#filtros");
-ARTES.forEach(a => {
-  const f = document.createElement("figure");
-  f.className = "item"; f.dataset.k = a.k;
-  const b = document.createElement("button");
-  b.type = "button"; b.className = "abrir";
-  b.setAttribute("aria-label", "Ampliar: " + a.t);
-  b.appendChild(arte(a));
-  const cap = document.createElement("figcaption"); cap.textContent = a.t;
-  f.append(b, cap);
-  b.addEventListener("click", () => abrir(a, b.firstChild));
-  parede.appendChild(f);
-});
-Object.entries(CATEGORIAS).forEach(([k, nome], i) => {
-  const b = document.createElement("button");
-  b.type = "button"; b.textContent = nome; b.setAttribute("aria-pressed", i === 0);
-  b.addEventListener("click", () => {
-    filtros.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b));
-    parede.querySelectorAll("figure").forEach(f => f.hidden = k !== "todos" && f.dataset.k !== k);
-  });
-  filtros.appendChild(b);
-});
-
-// ampliação
-const lb = $("#lb");
-function abrir(a, box){
-  if (box.dataset.vazio) return;
-  $("#lbImg").innerHTML = ""; const im = new Image(); im.src = a.src; im.alt = a.t; $("#lbImg").appendChild(im);
-  $("#lbCap").textContent = a.t; lb.showModal();
-}
-$("#lbFechar").addEventListener("click", () => lb.close());
-lb.addEventListener("click", e => { if (e.target === lb) lb.close(); });
-
-// links de contato
-document.querySelectorAll("[data-zap]").forEach(a => { a.href = zapUrl(a.dataset.msg); a.target = "_blank"; a.rel = "noopener"; });
-$("#insta").href = "https://instagram.com/" + CFG.instagram;
-
-// tarja rolante (lista duplicada para o loop sem emenda)
-const TARJA = ["flyers de show","capas de zine","logos de banda","identidade visual","editorial e cobertura","solve et coagula","pacote mensal","memento mori","arte para o subterrâneo"];
-$("#faixa").innerHTML = [...TARJA, ...TARJA, ...TARJA, ...TARJA].map(t => "<span>" + t + "</span>").join("");
-
-// pedido vira mensagem de WhatsApp
-$("#pedido").addEventListener("submit", e => {
-  e.preventDefault();
-  const f = new FormData(e.target), v = k => (f.get(k) || "").toString().trim();
-  const msg = "Fala! Quero: " + v("tipo") + "\nPara: " + v("nome") +
-    "\nPrazo: " + (v("prazo") || "a combinar") +
-    (v("insta") ? "\nInstagram: " + v("insta") : "") +
-    "\nClima e referências: " + (v("ref") || "sem referência ainda");
-  window.open(zapUrl(msg), "_blank", "noopener");
+const WHATSAPP = "55XXXXXXXXXXX"; // Substitua pelo número com DDI + DDD, somente números.
+const toggle=document.getElementById('menuToggle');
+const nav=document.getElementById('navlinks');
+toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const lightbox=document.getElementById('lightbox'), lightboxImage=document.getElementById('lightboxImage');
+document.querySelectorAll('.art-card').forEach(card=>card.addEventListener('click',()=>{
+ lightboxImage.src=card.dataset.image;lightboxImage.alt=card.dataset.title;lightbox.classList.add('open');document.body.style.overflow='hidden';
+}));
+function closeLightbox(){lightbox.classList.remove('open');lightboxImage.src='';document.body.style.overflow='';}
+document.getElementById('closeLightbox').addEventListener('click',closeLightbox);
+lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
+document.getElementById('briefing').addEventListener('submit',e=>{
+ e.preventDefault();
+ if(WHATSAPP==='55XXXXXXXXXXX'){alert('Antes de enviar, configure o número do WhatsApp no código do site.');return;}
+ const data=new FormData(e.currentTarget);
+ const msg=[
+  'Olá! Vim pelo site Necromania666 e gostaria de conversar sobre um projeto.',
+  'Tipo: '+data.get('tipo'),
+  'Projeto: '+data.get('projeto'),
+  'Prazo: '+(data.get('prazo')||'A combinar'),
+  'Formato: '+(data.get('formato')||'A definir'),
+  'Detalhes: '+(data.get('detalhes')||'A conversar')
+ ].join('\n');
+ window.open('https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(msg),'_blank','noopener');
 });
 </script>
 </body>
